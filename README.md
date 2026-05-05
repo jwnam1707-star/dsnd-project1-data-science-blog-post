@@ -35,13 +35,15 @@ These datasets can be downloaded from the CMS Provider Data Catalog:
 https://data.cms.gov/provider-data/datasets
 
 ## Summary of Results
-- The number of Medicare-serving hospitals varies across states, and some areas such as AS, GU, MP, RI, and VI have relatively few hospitals in the dataset, suggesting more limited hospital availability there.
+- The number of Medicare-serving hospitals varies across states, and some areas such as AS, GU, MP, RI, and VI have relatively few hospitals in the dataset.
 - Veterans Administration owned or operated hospitals show higher mean overall ratings than other ownership groups in this analysis, and hospital rating also differs by hospital type and emergency-service status.
 - HCAHPS star ratings are concentrated around 3 to 4 stars, while HCAHPS linear mean values are mostly distributed between about 80 and 95.
 - Higher HCAHPS linear mean values are generally associated with higher overall hospital ratings, suggesting that patient experience is aligned with broader hospital quality signals.
 - Readmission ratios across HRRP conditions are on average close to the CMS benchmark of 1.0, with modest variation across states, hospital types, and ownership groups.
 - A simple logistic regression model was trained to predict whether a hospital has an above-expected heart failure readmission ratio (`Excess Readmission Ratio > 1`) using hospital characteristics and HCAHPS linear mean value.
 - In the example prediction scenario, the model predicted class `1` with probability `0.644`, meaning the hypothetical hospital was classified as more likely to have above-expected heart failure readmissions.
+
+For a concise and non-technical overview of the project, you can also read the accompanying Medium blog post here: [https://medium.com/@jwnam1707/what-medicare-hospital-data-revealed-about-care-gaps-patient-experience-and-readmission-risk-3b56b6d1e3b8].
 
 ## Acknowledgement
 This project uses publicly available hospital data from the Centers for Medicare & Medicaid Services (CMS), including Hospital General Information, HCAHPS, and Hospital Readmissions Reduction Program datasets.
